@@ -1,0 +1,22 @@
+{
+  "name": "vendor_name/test",
+  "description": "description",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "nttis",
+      "email": "email@example.com"
+    }
+  ],
+  "repositories": [
+    {
+      "url": "https://github.com/GalaxyGamesMC/Ovommand.git",
+      "type": "git"
+    }
+  ],
+  "require": {
+    "galaxygames/ovommand": "dev-main",
+    "sof3/pharynx": "dev-master"
+  }
+}

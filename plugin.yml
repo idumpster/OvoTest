@@ -1,0 +1,8 @@
+name: OvoTest
+version: 0.0.1
+main: arie\test\Main
+api: 5.4.3
+permissions:
+  hello:
+    default: true
+    description: "hello"
