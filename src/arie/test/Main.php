@@ -14,6 +14,6 @@ class Main extends PluginBase implements Listener{
 		OvommandHook::register($this);
 		Server::getInstance()->getPluginManager()->registerEvents($this, $this);
 
-		$this->getServer()->getCommandMap()->register("hello", new TestCommand($this, "hello", "If you find this project useful, please consider donating to support development", aliases: ["h"]));
+		$this->getServer()->getCommandMap()->register("ovo", new TestCommand($this, "test", "Test ovo command", aliases: ["t", "ovo"]));
 	}
 }

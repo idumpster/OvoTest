@@ -57,9 +57,7 @@ class TestCommand extends BaseCommand{
 
 	public function setup() : void{
 		$this->setPermission("hello");
-//		$this->registerSubCommand(new TestSubCMD("test", showAliases: ["meow"]));
-		$this->registerSubCommand(new TestSubCommand("test"));
-//		$this->registerSubCommand(new TestSubCMD("apple"));
+		$this->registerSubCommand(new TestSubCommand("sub1", showAliases: []));
 
 		$this->registerParameters(0,
 			new BooleanParameter("c")
