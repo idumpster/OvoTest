@@ -21,7 +21,7 @@
   ],
   "require": {
     "galaxygames/ovommand": "dev-main",
-    "sof3/pharynx": "^0.3.0"
+    "sof3/pharynx": "dev-master"
   },
   "scripts": {
     "build": "php -dphar.readonly=0 vendor/bin/pharynx -i=. -c -p=OvoTest.phar"
