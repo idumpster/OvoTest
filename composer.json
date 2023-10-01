@@ -1,8 +1,7 @@
 {
-  "name": "vendor_name/test",
-  "description": "description",
+  "name": "arie/ovotest",
+  "description": "Ovo Test Plugin",
   "minimum-stability": "dev",
-  "license": "proprietary",
   "authors": [
     {
       "name": "nttis",
