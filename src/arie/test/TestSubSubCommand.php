@@ -4,10 +4,7 @@ declare(strict_types=1);
 namespace arie\test;
 
 use galaxygames\ovommand\BaseSubCommand;
-use galaxygames\ovommand\enum\DefaultEnums;
 use galaxygames\ovommand\parameter\BooleanParameter;
-use galaxygames\ovommand\parameter\EnumParameter;
-use galaxygames\ovommand\parameter\StringParameter;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 

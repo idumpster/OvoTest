@@ -21,7 +21,9 @@
     }
   ],
   "require": {
-    "galaxygames/ovommand": "dev-main",
+    "galaxygames/ovommand": "dev-main"
+  },
+  "require-dev": {
     "sof3/pharynx": "^0.3.6"
   },
   "scripts": {
