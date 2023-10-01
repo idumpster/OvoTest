@@ -9,6 +9,11 @@
       "email": "email@example.com"
     }
   ],
+  "autoload": {
+    "classmap": [
+      "src"
+    ]
+  },
   "repositories": [
     {
       "url": "https://github.com/GalaxyGamesMC/Ovommand.git",
@@ -18,5 +23,8 @@
   "require": {
     "galaxygames/ovommand": "dev-main",
     "sof3/pharynx": "dev-master"
+  },
+  "scripts": {
+    "build": "php -dphar.readonly=0 vendor/bin/pharynx -i=. -c -p=OvoTest.phar"
   }
 }
