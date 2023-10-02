@@ -29,7 +29,7 @@ class TestSubCommand extends BaseSubCommand{
 
 		$this->registerParameters(0,
 			new PositionParameter("a"),
-			new EnumParameter("aa", DefaultEnums::GAMEMODE),
+			new EnumParameter("aa", DefaultEnums::PM_GAMEMODE()),
 		);
 		$this->registerParameters(1, new BooleanParameter("yes madam"));
 	}
