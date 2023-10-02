@@ -26,6 +26,6 @@
     "sof3/pharynx": "dev-fix-dep-dedup"
   },
   "scripts": {
-    "build": "php -dphar.readonly=0 vendor/bin/pharynx -i=. -c -v -p=OvoTest.phar"
+    "build": "php -dphar.readonly=0 vendor/bin/pharynx -i=. -c -v -p=../OvoTest.phar"
   }
 }
