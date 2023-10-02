@@ -15,8 +15,11 @@
   },
   "repositories": [
     {
-      "type": "git",
-      "url": "D:\\pmmp\\SharedOvommand"
+      "type": "path",
+      "url": "d:/pmmp/SharedOvommand",
+      "options": {
+        "symlink": true
+      }
     },
     {
       "type": "git",
