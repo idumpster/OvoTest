@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace arie\test;
 
+use galaxygames\ovommand\parameter\IntParameter;
 use galaxygames\ovommand\BaseCommand;
 use galaxygames\ovommand\parameter\BooleanParameter;
 use pocketmine\command\CommandSender;
@@ -59,7 +60,8 @@ class TestCommand extends BaseCommand{
 			new BooleanParameter("c")
 		);
 		$this->registerParameters(1,
-			new BooleanParameter("d")
+			new BooleanParameter("d"),
+			new IntParameter("dd")
 		);
 	}
 }
