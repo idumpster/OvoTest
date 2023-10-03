@@ -65,7 +65,8 @@ class TestCommand extends BaseCommand{
 			new IntParameter("dd")
 		);
 		$this->registerParameters(2,
-			new EnumParameter("sound", "sound", false)
+			new EnumParameter("sound", "sound", false),
+			new EnumParameter("name", "myname", false)
 		);
 	}
 }
