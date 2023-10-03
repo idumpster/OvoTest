@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace arie\test;
 
+use galaxygames\ovommand\parameter\EnumParameter;
 use galaxygames\ovommand\parameter\IntParameter;
 use galaxygames\ovommand\BaseCommand;
 use galaxygames\ovommand\parameter\BooleanParameter;
@@ -62,6 +63,9 @@ class TestCommand extends BaseCommand{
 		$this->registerParameters(1,
 			new BooleanParameter("d"),
 			new IntParameter("dd")
+		);
+		$this->registerParameters(2,
+			new EnumParameter("sound", "sound", false)
 		);
 	}
 }
