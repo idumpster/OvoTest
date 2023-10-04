@@ -16,18 +16,18 @@
   "repositories": [
     {
       "type": "path",
-      "url": "d:/pmmp/SharedOvommand",
+      "url": "d:/pmmp/Ovommand",
       "options": {
         "symlink": true
       }
     },
     {
       "type": "git",
-      "url": "https://github.com/GalaxyGamesMC/SharedOvommand.git"
+      "url": "https://github.com/GalaxyGamesMC/Ovommand.git"
     }
   ],
   "require": {
-    "galaxygames/shared_ovommand": "dev-main"
+    "galaxygames/ovommand": "dev-main"
   },
   "require-dev": {
     "sof3/pharynx": "dev-master"
