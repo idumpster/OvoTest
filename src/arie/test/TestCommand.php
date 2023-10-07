@@ -57,14 +57,14 @@ class TestCommand extends BaseCommand{
 		$this->setPermission("hello");
 		$this->registerSubCommands(new TestSubCommand("sub1", showAliases: []));
 
-		$this->registerParameters(0,
+		$this->registerParameters(
 			new BooleanParameter("c")
 		);
-		$this->registerParameters(1,
+		$this->registerParameters(
 			new BooleanParameter("d"),
 			new IntParameter("dd")
 		);
-		$this->registerParameters(2,
+		$this->registerParameters(
 			new EnumParameter("sound", "sound", false)
 		);
 	}

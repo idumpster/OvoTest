@@ -22,6 +22,6 @@ class TestSubSubCommand extends BaseSubCommand{
 	public function setup() : void{
 		$this->setPermission("hello");
 
-		$this->registerParameters(0, new BooleanParameter("no madam"));
+		$this->registerParameters(new BooleanParameter("no madam"));
 	}
 }
