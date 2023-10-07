@@ -5,6 +5,7 @@ namespace arie\test;
 
 use galaxygames\ovommand\BaseSubCommand;
 use galaxygames\ovommand\parameter\BooleanParameter;
+use galaxygames\ovommand\parameter\TargetParameter;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 
@@ -21,7 +22,6 @@ class TestSubSubCommand extends BaseSubCommand{
 
 	public function setup() : void{
 		$this->setPermission("hello");
-
-		$this->registerParameters(new BooleanParameter("no madam"));
+		$this->registerParameters(new TargetParameter("mode"));
 	}
 }
