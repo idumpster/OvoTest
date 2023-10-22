@@ -13,10 +13,9 @@ use pocketmine\Server;
 class Main extends PluginBase implements Listener{
 
 	public function onEnable() : void{
-		OvommandHook::register($this);
 		Server::getInstance()->getPluginManager()->registerEvents($this, $this);
-
-		EnumManager::getInstance()->register(new HardEnum("sound", ["meow" => "cat", "goof" => "dog"]));
+		OvommandHook::register($this);
+		OvommandHook::getEnumManager()->register(new HardEnum("sound", ["meow" => "cat", "goof" => "dog"]));
 		
 //		var_dump(GlobalHookPool::getHooks());
 //		var_dump($hook = GlobalHookPool::getHook($this)::getOwnedPlugin());
