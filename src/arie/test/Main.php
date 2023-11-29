@@ -15,8 +15,8 @@ class Main extends PluginBase implements Listener{
 	public function onEnable() : void{
 		Server::getInstance()->getPluginManager()->registerEvents($this, $this);
 		OvommandHook::register($this);
-		OvommandHook::getEnumManager()->register(new HardEnum("sound", ["meow" => "cat", "goof" => "dog"]));
-		
+		OvommandHook::getEnumManager()->register(new HardEnum("sound", ["meow cat" => "cat", "goof" => "dog"]));
+
 //		var_dump(GlobalHookPool::getHooks());
 //		var_dump($hook = GlobalHookPool::getHook($this)::getOwnedPlugin());
 
