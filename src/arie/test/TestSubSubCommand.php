@@ -10,7 +10,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 
 class TestSubSubCommand extends BaseSubCommand{
-	public function onRun(CommandSender $sender, string $label, array $args, string $preLabel = "") : void{
+	public function onRun(CommandSender $sender, string $label, array $args) : void{
 		if (empty($args)) {
 			$sender->sendMessage($this->getUsage());
 		}

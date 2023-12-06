@@ -17,7 +17,7 @@ use shared\galaxygames\ovommand\fetus\result\BaseResult;
 
 class TestSubCommand extends BaseSubCommand{
 	/** @param array<string,ValueResult|BrokenSyntaxResult> $args */
-	public function onRun(CommandSender $sender, string $label, array $args, string $preLabel = "") : void{
+	public function onRun(CommandSender $sender, string $label, array $args) : void{
 		if (empty($args)) {
 			$sender->sendMessage($this->getUsage());
 		}

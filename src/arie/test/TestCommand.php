@@ -41,7 +41,7 @@ use pocketmine\player\Player;
 
 class TestCommand extends BaseCommand{
 
-	public function onRun(CommandSender $sender, string $label, array $args, string $preLabel = "") : void{
+	public function onRun(CommandSender $sender, string $label, array $args) : void{
 		if (empty($args)) {
 			$sender->sendMessage("HEY! :C");
 			$sender->sendMessage($this->getUsage());
@@ -65,7 +65,7 @@ class TestCommand extends BaseCommand{
 			new IntParameter("dd")
 		);
 		$this->registerParameters(
-			new EnumParameter("sound", "sound", false)
+			new EnumParameter("sound", "sound", true)
 		);
 	}
 }
