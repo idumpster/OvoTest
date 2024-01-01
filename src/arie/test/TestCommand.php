@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace arie\test;
 
+use galaxygames\ovommand\constraint\InGameRequiredConstraint;
 use galaxygames\ovommand\parameter\EnumParameter;
 use galaxygames\ovommand\parameter\IntParameter;
 use galaxygames\ovommand\BaseCommand;
