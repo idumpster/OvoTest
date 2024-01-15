@@ -26,9 +26,7 @@ class TestSubCommand extends BaseSubCommand{
 		}
 		if (isset($args["b"], $args["online"], $args["pmGamemode"])) {
 			$player = Server::getInstance()->getPlayerExact($args['online']->getValue());
-			if ($player !== null) {
-				$player->setGamemode($args["pmGamemode"]->getValue());
-			}
+			$player?->setGamemode($args["pmGamemode"]->getValue());
 		}
 		var_dump($args);
 	}
