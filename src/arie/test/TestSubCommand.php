@@ -5,7 +5,6 @@ namespace arie\test;
 
 use galaxygames\ovommand\BaseSubCommand;
 use galaxygames\ovommand\enum\DefaultEnums;
-use galaxygames\ovommand\parameter\BooleanParameter;
 use galaxygames\ovommand\parameter\EnumParameter;
 use galaxygames\ovommand\parameter\PositionParameter;
 use galaxygames\ovommand\parameter\result\BrokenSyntaxResult;
@@ -13,7 +12,7 @@ use galaxygames\ovommand\parameter\result\ValueResult;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 use pocketmine\Server;
-use shared\galaxygames\ovommand\fetus\result\BaseResult;
+use src\arie\test\TestSubSub2Command;
 
 class TestSubCommand extends BaseSubCommand{
 	/** @param array<string,ValueResult|BrokenSyntaxResult> $args */
@@ -33,9 +32,10 @@ class TestSubCommand extends BaseSubCommand{
 
 	public function setup() : void{
 		$this->setPermission("hello");
-
+//
 		$this->registerSubCommands(new TestSubSubCommand("second"));
-
+		$this->registerSubCommands(new TestSubSub2Command("third"));
+//
 		$this->registerParameters(
 			new PositionParameter("a"),
 			new EnumParameter("aa", DefaultEnums::PM_GAMEMODE),

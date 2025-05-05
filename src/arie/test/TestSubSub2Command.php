@@ -1,15 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace arie\test;
+namespace src\arie\test;
 
 use galaxygames\ovommand\BaseSubCommand;
-use galaxygames\ovommand\parameter\BooleanParameter;
-use galaxygames\ovommand\parameter\TargetParameter;
+use galaxygames\ovommand\parameter\EnumParameter;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 
-class TestSubSubCommand extends BaseSubCommand{
+class TestSubSub2Command extends BaseSubCommand{
 	public function onRun(CommandSender $sender, string $label, array $args) : void{
 		if (empty($args)) {
 			$sender->sendMessage($this->getUsage());
@@ -22,7 +21,9 @@ class TestSubSubCommand extends BaseSubCommand{
 
 	public function setup() : void{
 		$this->setPermission("hello");
-		$this->registerParameters(new TargetParameter("mode"));
-		$this->registerParameters(new BooleanParameter("BLABLA"));
+
+		$this->registerParameters(
+			new EnumParameter("sound", "sound", true)
+		);
 	}
 }

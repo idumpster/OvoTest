@@ -1,6 +1,7 @@
 name: OvoTest
 version: 0.0.1
 main: arie\test\Main
+namespace: arie
 api: 5.4.3
 permissions:
   hello:
