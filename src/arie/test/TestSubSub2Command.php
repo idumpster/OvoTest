@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace src\arie\test;
+namespace arie\test;
 
 use galaxygames\ovommand\BaseSubCommand;
 use galaxygames\ovommand\parameter\EnumParameter;

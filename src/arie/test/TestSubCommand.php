@@ -12,7 +12,6 @@ use galaxygames\ovommand\parameter\result\ValueResult;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 use pocketmine\Server;
-use src\arie\test\TestSubSub2Command;
 
 class TestSubCommand extends BaseSubCommand{
 	/** @param array<string,ValueResult|BrokenSyntaxResult> $args */
